@@ -1,0 +1,25 @@
+{
+  "name": "veerareddyobula.github.io",
+  "homepage": "https://github.com/veerareddyobula/veerareddyobula.github.io",
+  "authors": [
+    "Veera Reddy Obula <veerareddy.obula@gmail.com>"
+  ],
+  "description": "Veerareddyobula personal profile page",
+  "main": "index.html",
+  "keywords": [
+    "veerareddyobula",
+    "veera"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1"
+  }
+}
