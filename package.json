@@ -2,9 +2,11 @@
   "name": "website1",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://veerareddyobula.github.io/profile/",
+  "homepage": "https://veerareddyobula.github.io/profile/",
   "dependencies": {
     "gh-pages": "^2.0.1",
+    "jquery": "^3.3.1",
+    "materialize-css": "^1.0.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8"
@@ -13,8 +15,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
