@@ -1,41 +1,32 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import $ from "jquery";
 import M from "materialize-css";
+import 'materialize-css/dist/css/materialize.css'
 
-import LabelSection from './../../components/label-section/label-section'
-import './home-container.css'
+import HeaderComponent from './../../components/header/header-component'
+import AboutmeComponent from './../../components/aboutme/aboutme-component'
+import EducationComponent from './../../components/education/education-component'
+import WorkExpirenceComponent from './../../components/work-expirence/work-expirence-component'
+import ProjectsComponent from './../../components/projects/projects-component'
+import FooterComponent from './../../components/footer/footer-component'
 class HomeContainer extends Component {
 
     componentDidMount = () => {
-        $(document).ready(function () {
-            const parallaxOneEntity = $('.parallax');
-            M.Parallax.init(parallaxOneEntity);
-        });
-
-        const elems = document.querySelectorAll('.fixed-action-btn');
-        M.FloatingActionButton.init(elems, {
-            direction: 'left',
-            hoverEnabled: false
-        });
+        const parallaxContainer = $('.parallax')
+        console.log('--== parallaxContainer ', parallaxContainer)
+        M.Parallax.init(parallaxContainer);
     }
 
     render() {
         return (
-            <div className="parallax-container">
-                <LabelSection />
-                <div className="fixed-action-btn horizontal click-to-toggle">
-                    <a className="btn-floating btn-large red">
-                        <i className="material-icons">menu</i>
-                    </a>
-                    <ul>
-                        <li><a className="btn-floating red"><i className="material-icons">insert_chart</i></a></li>
-                        <li><a className="btn-floating yellow darken-1"><i className="material-icons">format_quote</i></a></li>
-                        <li><a className="btn-floating green"><i className="material-icons">publish</i></a></li>
-                        <li><a className="btn-floating blue"><i className="material-icons">attach_file</i></a></li>
-                    </ul>
-                </div>
-            </div>
-        )
+            <Fragment>
+                <HeaderComponent />
+                <AboutmeComponent />
+                <EducationComponent />
+                <WorkExpirenceComponent />
+                <ProjectsComponent />
+                <FooterComponent />                
+            </Fragment>)
     }
 }
 export default HomeContainer

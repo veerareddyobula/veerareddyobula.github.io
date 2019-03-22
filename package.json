@@ -4,9 +4,11 @@
   "private": true,
   "homepage": "https://veerareddyobula.github.io/profile/",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "gh-pages": "^2.0.1",
     "jquery": "^3.3.1",
     "materialize-css": "^1.0.0",
+    "popper.js": "^1.14.3",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8"
