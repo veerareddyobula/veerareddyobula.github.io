@@ -19,7 +19,7 @@ class AboutmeComponent extends Component {
                     </div>
                 </div>
                 <div className="parallax">
-                    <img src="assets/parallax/1PFHyYy-plain-background-wallpaper.jpg?dpr=1&auto=format&fit=crop&w=1500&h=927&q=80&cs=tinysrgb&crop=" />
+                    <img alt="Hay, I`m Veera Reddy Obulareddy" src="assets/parallax/1PFHyYy-plain-background-wallpaper.jpg?dpr=1&auto=format&fit=crop&w=1500&h=927&q=80&cs=tinysrgb&crop=" />
                 </div>
             </div>
         )

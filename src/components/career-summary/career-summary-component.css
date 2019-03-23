@@ -9,16 +9,16 @@
         "profile techSkils projects projects"
 }
 
-.icon--row, h5, p {
-    grid-column : 1/-1;
-    margin-bottom: 4px;
-    margin-top: 0px;
-}
-
 .slash--heading {
     padding-bottom: 20px;
     border-bottom: 1px solid var(--border-color);
     border-bottom-width: 2px;
+}
+
+.icon--row, h5, p {
+    grid-column : 1/-1;
+    margin-bottom: 4px;
+    margin-top: 0px;
 }
 
 .profile--row--col {
