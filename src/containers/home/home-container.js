@@ -3,8 +3,10 @@ import $ from "jquery";
 import M from "materialize-css";
 import 'materialize-css/dist/css/materialize.css'
 
-import HeaderComponent from './../../components/header/header-component'
 import AboutmeComponent from './../../components/aboutme/aboutme-component'
+import HeaderComponent from './../../components/header/header-component'
+import QuotesComponent from './../../components/quotes/quotes-component'
+
 import EducationComponent from './../../components/education/education-component'
 import WorkExpirenceComponent from './../../components/work-expirence/work-expirence-component'
 import ProjectsComponent from './../../components/projects/projects-component'
@@ -20,10 +22,9 @@ class HomeContainer extends Component {
     render() {
         return (
             <Fragment>
-                <HeaderComponent />
                 <AboutmeComponent />
-                <EducationComponent />
-                <WorkExpirenceComponent />
+                <HeaderComponent />
+                <QuotesComponent />
                 <ProjectsComponent />
                 <FooterComponent />                
             </Fragment>)

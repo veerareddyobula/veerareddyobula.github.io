@@ -1,0 +1,123 @@
+.d--grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33.333%, auto));
+    grid-template-rows: repeat(4, minmax(2rem, auto));
+    grid-template-areas: 
+        "profile profile profile profile"
+        "profile profile profile profile"
+        "profile techSkils projects projects"
+}
+
+.icon--row, h5, p {
+    grid-column : 1/-1;
+    margin-bottom: 4px;
+    margin-top: 0px;
+}
+
+.slash--heading {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    border-bottom-width: 2px;
+}
+
+.profile--row--col {
+    grid-column : 1/2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, auto));
+    grid-template-rows: auto;
+    margin-left: 20px;
+    border-right: 1px solid var(--border-color);
+}
+
+.profile--row--col div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-self: center;
+}
+
+.profile--row--col div.circle--badge {
+    display: grid;
+    grid-template-columns: 90px;
+    grid-template-rows: 1fr;
+    justify-self: center;
+    align-items: end;
+    margin-bottom: 1rem;
+}
+
+.linked-in-btn {
+    grid-column: 1/-1;
+    justify-self: start;
+}
+
+h2 {
+    margin: 0px;
+}
+
+.technical--skills--row--col{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4px;
+    padding: 4px;
+}
+
+.experience--row--col {
+    margin: 0px;
+    box-shadow: none;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+.entity {
+    display: flex !important;
+    justify-content: space-between;
+}
+
+.link-color {
+    background-color: #039be5 !important;
+    color: #fff;
+}
+
+.sub-label {
+    color: var(--border-color);
+}
+
+/* Landscape */
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 850px) {
+    .profile--row--col, .technical--skills--row--col, .experience--row--col{
+        grid-column: 1/-1;
+        border: 0px;
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-width: 850px) 
+  and (max-width: 1080px) {
+
+    .d--grid{
+        grid-template-areas:  
+        "profile profile profile profile"
+        "profile profile profile profile"
+        "profile projects  techSkils techSkils"
+    }
+
+    .profile--row--col {
+        grid-column: 1/3;
+        border: 0px;
+    }
+
+    .technical--skills--row--col {
+        grid-column: 1/-1;
+        border: 0px;
+    }
+
+    .experience--row--col{
+        grid-column: 3/-1;
+    }
+}

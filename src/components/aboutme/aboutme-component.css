@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+.s-font-wish-heading {
+    font-family: 'Pacifico', cursive;
+}
+
+.s-font-wish-heading p{
+    margin: 25px;
+    font-size: 130%;
+}
+
+.s-font-name-heading {
+    font-family: 'Comfortaa', cursive;
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 2px;
+}
+
+.s-font-role-heading {
+    font-family: 'Comfortaa', cursive;
+    font-size: 24px;
+    margin: 0px;
+}
+
+.d--grid--name {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33.333%, auto));
+    grid-template-rows: 1fr;
+}

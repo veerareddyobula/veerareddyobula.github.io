@@ -1,3 +1,8 @@
 :root {
   --black: #272727;
+  --border-color: #bbb;
+}
+
+html {
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
