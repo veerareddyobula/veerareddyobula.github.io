@@ -25,9 +25,13 @@ class BlogComponent extends Component {
                 <h5 className="center slash--heading">Develop the skill of setting worthy goals</h5>
                 <div className="blogger--post">
                     {
-                        Object.keys(data).map((entity, index) => {
-                            return <BlogCardComponent key={index} item={data[entity]} />
-                        })
+                        data?(
+                            Object.keys(data).map((entity, index) => {
+                                return <BlogCardComponent key={index} item={data[entity]} />
+                            })
+                        ):(
+                            <div style={{display:'grid', justifyContent:'center'}}>No Data Found</div>
+                        )
                     }
                 </div>
             </Fragment>
