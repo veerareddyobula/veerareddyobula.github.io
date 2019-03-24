@@ -19,9 +19,9 @@ class AboutmeComponent extends Component {
                     </div>
                     <div className="row">
                         <div className="col offset-4 s8">
-                            <a className="btn amber darken-3 text-white">
+                            <span className="btn amber darken-3 text-white">
                                 <i className="material-icons left">file_download</i>Resume
-                            </a>
+                            </span>
                         </div>
                     </div>
                 </div>

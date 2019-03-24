@@ -71,7 +71,7 @@ class ManagePostsContainer extends Component {
                             <a href="/admin/allow/home" className="btn blue-grey darken-2 white-text mr-2">
                                 <i className="material-icons left">cancel</i>Cancel
                             </a>
-                            <a href="#" className="btn blue darken-1 white-text mr-2" onClick={() => this.handleCompleteClick(blogPost)}>
+                            <a href="/admin/allow/home" className="btn blue darken-1 white-text mr-2" onClick={() => this.handleCompleteClick(blogPost)}>
                                 <i className="material-icons left">check</i>Publish
                             </a>
                         </div>
