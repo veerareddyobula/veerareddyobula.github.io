@@ -8,13 +8,20 @@ class AboutmeComponent extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col s12 white-text">
-                            <h4 class="s-font-wish-heading">
-                                <p class="s-text-color-white">
+                            <h4 className="s-font-wish-heading">
+                                <p className="s-text-color-white">
                                     <em>Hey, I'm</em>
                                 </p>
                             </h4>
                             <p className="s-font-name-heading">Veera Reddy Obulareddy</p>
                             <p className="s-font-role-heading">I`m a full-stack web developer</p>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col offset-4 s8">
+                            <a className="btn amber darken-3 text-white">
+                                <i className="material-icons left">file_download</i>Resume
+                            </a>
                         </div>
                     </div>
                 </div>

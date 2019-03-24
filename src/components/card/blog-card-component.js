@@ -1,20 +1,23 @@
 import React, { Component } from 'react'
+import './blog-card-component.css'
 
 class BlogCardComponent extends Component {
     render() {
         const {item} = this.props
         return (
-            <div class="row blue-grey-text text-darken-4">
-                <div class="col s12 m7">
-                    <div class="card">
-                        <div class="card-image">
+            <div className="row blue-grey-text text-darken-4">
+                <div className="col s12 m7">
+                    <div className="card">
+                        <div className="card-image card-image-wrapper">
                             <img src={item.imageUrl} alt={item.cardTitle} />
                         </div>
-                        <div class="card-content">
-                            <span class="card-title">{item.cardTitle}</span>
-                            <p>{item.myComments}</p>
+                        <div className="card-content">
+                            <div id="style-4" className="card-content-wrapper">
+                                <span className="card-title">{item.cardTitle}</span>
+                                <p>{item.myComments}</p>
+                            </div>
                         </div>
-                        <div class="card-action">
+                        <div className="card-action">
                             <a href={item.link} rel="noopener noreferrer" target="_blank">Link to original post</a>
                         </div>
                     </div>

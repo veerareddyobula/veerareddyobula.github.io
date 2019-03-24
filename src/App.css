@@ -6,3 +6,21 @@
 html {
   font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
+
+html::-webkit-scrollbar-track
+ {
+     -webkit-box-shadow: inset 0 0 6px #F5F5F5;
+     background-color: #F5F5F5;
+ }
+ 
+ html::-webkit-scrollbar
+ {
+     width: 6px;
+     background-color: #F5F5F5;
+ }
+ 
+ html::-webkit-scrollbar-thumb
+ {
+     background-color: #306584;
+     border: 1px solid #306584;
+ }

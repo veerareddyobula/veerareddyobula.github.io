@@ -3,8 +3,8 @@ import './header-component.css'
 class HeaderComponent extends Component {
     render() {
         return (
-            <nav className="self-dark-blue">
-                <div className="nav-wrapper transparent">
+            <nav className="blue darken-1 white-text">
+                <div className="nav-wrapper">
                     <a href="#" className="brand-logo"></a>
                     <ul className="right hide-on-med-and-down">
                         <li className="hoverable active"><a href="#">Home</a></li>
